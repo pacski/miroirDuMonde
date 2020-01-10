@@ -1,0 +1,59 @@
+/* .perso{
+    width: 500px;
+    height: 500px;
+    border: solid;
+
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: flex;
+    flex-direction: column
+} */
+
+.perso img{
+    height: 125px;
+    width: 723px;
+    position: absolute;
+}
+
+
+
+.raceElfeLabel, .raceElfeSelect, .raceHumainLabel, .raceHumainSelect, .raceNainLabel, .raceNainSelect, .raceSireneLabel, .raceSireneSelect{
+visibility: hidden; 
+
+}
+
+.couleurDePeauElfe{
+    display: none;
+}
+
+#raceImg{
+    height: 724px;
+    background: red;
+    left: 40px;
+    top: 40px;
+}
+#torseImg{
+    height: 300px;
+    width: 300px;
+    border: solid;
+    background: green;
+    left: 10px;
+    top: 10px;
+}
+#jambesImg{
+    height: 300px;
+    width: 300px;
+    border: solid;
+    background: pink;
+    left: 30px;
+    top: 30px;
+}
+#piedsImg{
+    height: 300px;
+    width: 300px;
+    border: solid;
+    background: blue;
+    left: 20px;
+    top: 20px;
+}

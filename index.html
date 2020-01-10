@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center">Choix des personnages </h1>    
+<div class="container d-flex">
+        <form class="col-6" action="" method="get" id="form">
+            <div class="form-group d-flex flex-column">
+                <label for="">Nom : </label>        
+                <input name="nom" type="text" class="form-control">
+            </div>
+            <div class="form-group d-flex flex-column">
+                <label for="">Prénom : </label>        
+                <input type="text" class="form-control" name="prenom">
+            </div>
+            <div class="form-group d-flex flex-column">
+                <label for="">Age : </label>        
+                <input name="age" type="text" class="form-control">
+            </div>
+            <div class="input-group d-flex flex-row">
+                <div class="d-flex flex-column">
+                     <label for="race">Race : </label>
+                    <select class="custom-select" name="race" id="race">
+                        <option value="race">Race</option>
+                        <option value="Elfe">Elfe</option>
+                        <option value="Humain">Humain</option>
+                        <option value="Nain">Nain</option>
+                        <option value="Ecorche">Ecorché</option>
+                        <option value="aglarone">Aglarone</option>
+                    </select>
+                </div>
+                   
+                 <div class="raceBis d-flex" id="raceBis">
+                    <div class="input-group d-flex flex-column col-">
+                        <label class="raceElfeLabel" for="raceElfe">raceElfe : </label>
+                        <select class="raceElfeSelect custom-select" name="raceBis">
+                            <option value="FR" selected>Sylvain</option>
+                            <option value="BE">Lunaire</option>
+                        </select>
+                    </div>
+                    <div class="input-group d-flex flex-column raceHumain">
+                        <label class="raceHumainLabel" for="raceHumain">raceHumain : </label>
+                        <select class="raceHumainSelect custom-select" name="raceBis">
+                            <option value="FR" selected>Humain</option>
+                            <option value="FR" selected>Ecorché</option>
+                            <option value="BE">Enfant des brumes</option>
+                        </select>
+                    </div>
+                    <div class="input-group d-flex flex-column raceNain">
+                        <label class="raceNainLabel" for="raceNain">raceNain : </label>
+                        <select class="raceNainSelect custom-select" name="raceBis">
+                            <option value="FR" selected>Nain</option>
+                            <option value="BE">Corrompu</option>
+                        </select>
+                    </div>
+                    <div class="input-group d-flex flex-column raceSirene">
+                        <label class="raceSireneLabel" for="raceSirene">raceSirene : </label>
+                        <select class="raceSireneSelect custom-select" name="raceBis">
+                            <option value="FR" selected>Mluy'mlaya</option>
+                            <option value="BE">Naml'Ssinaa</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group d-flex flex-column">
+                      <label class="input-group" >Vocation</label>
+                    <select class="custom-select" name="vocation">
+                      <option selected>Choisissez...</option>
+                      <option value="metamorphe">Métamorphe</option>
+                      <option value="pugiliste">Pugiliste</option>
+                      <option value="stratege">Stratège</option>
+                      <option value="artilleur">Artilleur</option>
+                      <option value="controleur">Contrôleur</option>
+                      <option value="mastodonte">Mastodonte</option>
+                      <option value="jongleur">Jongleur</option>
+                      <option value="etoile">Etoile</option>
+                    </select>
+            </div>
+            <div class="input-group d-flex flex-column">
+                      <label class="input-group" >Croyance</label>
+                      <input type="text" class="form-control" name="croyance">
+                    
+            </div>
+            <div class="d-flex">
+            <div class="input-group d-flex flex-column">
+                      <label class="input-group" >Taille (kg): </label>
+                      <input type="text" class="form-control" name="taille">
+            </div>
+            <div class="input-group d-flex flex-column">
+                      <label class="input-group" >Poid (cm): </label>
+                      <input type="text" class="form-control" name="poid">
+            </div>
+            </div>
+            <div class="d-flex">
+            <div class="input-group d-flex flex-column">
+                        <label class="couleurDePeau" for="couleurDePeau">Couleur de peau : </label>
+                        <select class="couleurDePeau custom-select" id="couleurDePeau" name="couleurDePeau">
+                            <option value="">Couleur de peau</option>
+                            <option value="noir">noir</option>
+                            <option value="blanc">blanc</option>
+                            <option class="couleurDePeauElfeViolet" value="violet">violet</option>
+                            <option class="couleurDePeauElfeVert" value="vert">vert</option>
+                            <option class="couleurDePeauElfeGris" value="gris">gris</option>
+                        </select> 
+            </div>
+            <div class="input-group d-flex flex-column">
+                        <label class="input-group" >Couleur des cheveux : </label>
+                        <select class="custom-select" name="colorHair">
+                                <option selected>Choisissez...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                        </select>            
+            </div>
+            </div>
+            <div class="input-group d-flex flex-column">
+                      <label class="input-group" >Sexe</label>
+                    <select class="custom-select" name="sexe">
+                      <option selected>Choisissez...</option>
+                      <option value="feminin">Féminin</option>
+                      <option value="masculin">Masculin</option>
+                      <option value="hermaphrodite">Hermaphrodite</option>
+                    </select>
+            </div>
+            <div class="input-group d-flex flex-column">
+                      <label class="input-group" >Location</label>
+                    <select class="custom-select" name="location">
+                      <option selected>Choisissez...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+            </div>
+            <div class="input-group d-flex flex-column">
+                      <label class="input-group" >Son histoire : </label>
+                      <textarea class="form-control" rows="3" name="histoire"></textarea>
+            </div>
+            <div class="input-group d-flex flex-column">
+                    <label class="input-group" >Voie animalière</label>
+                  <select class="custom-select" name="animalWay">
+                    <option selected>Choisissez...</option>
+                    <option value="metamorphe">Métamorphe</option>
+                    <option value="pugiliste">Pugiliste</option>
+                    <option value="stratege">Stratège</option>
+                    <option value="artilleur">Artilleur</option>
+                    <option value="controleur">Contrôleur</option>
+                    <option value="mastodonte">Mastodonte</option>
+                    <option value="jongleur">Jongleur</option>
+                    <option value="etoile">Etoile</option>
+                  </select>
+          </div>
+            <div class="input-group d-flex flex-column">
+                    <label class="input-group" >Voie environnementale</label>
+                  <select class="custom-select" name="elementWay">
+                    <option selected>Choisissez...</option>
+                    <option value="metamorphe">Métamorphe</option>
+                    <option value="pugiliste">Pugiliste</option>
+                    <option value="stratege">Stratège</option>
+                    <option value="artilleur">Artilleur</option>
+                    <option value="controleur">Contrôleur</option>
+                    <option value="mastodonte">Mastodonte</option>
+                    <option value="jongleur">Jongleur</option>
+                    <option value="etoile">Etoile</option>
+                  </select>
+          </div>
+          <br>
+          <div class="input-group d-flex flex-column">
+              <input type="submit" name="Valider">
+          </div>
+        </form>
+        <div class="perso col-6">
+            <img class="col-md-12" id="raceImg" src="" alt="">
+            <img class="col-md-12" id="peauHumainImg" src="" alt="">
+           
+        </div>
+
+
+</div>
+
+
+
+
+<script src="script.js"></script>
+<script src="dataForm.js"></script>
+
+</body>
+</html>
+
