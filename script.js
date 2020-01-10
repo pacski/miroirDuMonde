@@ -159,8 +159,9 @@ race.addEventListener("change", function (e){
 
     }
 })
+
+// PeauHumain
 var peauHumain = document.getElementById('couleurDePeau')
-console.log(peauHumain);
 
 peauHumain.addEventListener("change", function (e){
     var peauHumainImg = document.getElementById("peauHumainImg")
@@ -175,26 +176,21 @@ peauHumain.addEventListener("change", function (e){
     }
   
 })
+// cheveuxHumain
+var colorHair = document.getElementById('colorHair')
 
+colorHair.addEventListener("change", function (e){
+    var cheveuxHumainImg = document.getElementById("cheveuxHumainImg")
 
+    if (e.target.value == "noir") {
+        cheveuxHumainImg.src = "images/couleurCheveux/" + e.target.value + "Humain.png";
 
+    }
+    else{
+        cheveuxHumainImg.src = "images/couleurCheveux/" + e.target.value + "Humain.png";
 
-
-
-
-// jambes
-var jambes = document.getElementById('jambes')
-
-jambes.addEventListener("change", function (e){
-    var jambesImg = document.getElementById("jambesImg")
-    jambesImg.src = "images/jambes/" + e.target.value + ".png";
-})
-// pieds
-var pieds = document.getElementById('pieds')
-
-pieds.addEventListener("change", function (e){
-    var piedsImg = document.getElementById("piedsImg")
-    piedsImg.src = "images/pieds/" + e.target.value + ".png";
+    }
+  
 })
 
 

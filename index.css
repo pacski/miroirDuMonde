@@ -33,21 +33,17 @@ visibility: hidden;
     left: 40px;
     top: 40px;
 }
-#torseImg{
-    height: 300px;
-    width: 300px;
-    border: solid;
-    background: green;
-    left: 10px;
-    top: 10px;
+#peauHumainImg{
+    height: 445px;
+    width: 268px;
+    left: 163px;
+    top: 103.5px;
 }
-#jambesImg{
-    height: 300px;
-    width: 300px;
-    border: solid;
-    background: pink;
-    left: 30px;
-    top: 30px;
+#cheveuxHumainImg{
+    height: 144px;
+    width: 171px;
+    left: 196px;
+    top: 81px;
 }
 #piedsImg{
     height: 300px;
