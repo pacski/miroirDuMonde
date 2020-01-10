@@ -161,9 +161,9 @@ race.addEventListener("change", function (e){
 })
 
 // PeauHumain
-var peauHumain = document.getElementById('couleurDePeau')
+var peau = document.getElementById('couleurDePeau')
 
-peauHumain.addEventListener("change", function (e){
+peau.addEventListener("change", function (e){
     var peauHumainImg = document.getElementById("peauHumainImg")
 
     if (e.target.value == "noir") {
@@ -177,9 +177,42 @@ peauHumain.addEventListener("change", function (e){
   
 })
 // cheveuxHumain
-var colorHair = document.getElementById('colorHair')
+var cheveux = document.getElementById('colorHair')
 
-colorHair.addEventListener("change", function (e){
+cheveux.addEventListener("change", function (e){
+    var cheveuxHumainImg = document.getElementById("cheveuxHumainImg")
+
+    if (e.target.value == "noir") {
+        cheveuxHumainImg.src = "images/couleurCheveux/" + e.target.value + "Humain.png";
+
+    }
+    else{
+        cheveuxHumainImg.src = "images/couleurCheveux/" + e.target.value + "Humain.png";
+
+    }
+  
+})
+
+// PeauElfe
+var peau = document.getElementById('couleurDePeau')
+
+peau.addEventListener("change", function (e){
+    var peauElfeImg = document.getElementById("peauElfeImg")
+
+    if (e.target.value == "noir") {
+        peauElfeImg.src = "images/couleurPeau/" + e.target.value + "Elfe.png";
+
+    }
+    else{
+        peauElfeImg.src = "images/couleurPeau/" + e.target.value + "Elfe.png";
+
+    }
+  
+})
+// cheveuxElfe
+var cheveux = document.getElementById('colorHair')
+
+cheveux.addEventListener("change", function (e){
     var cheveuxHumainImg = document.getElementById("cheveuxHumainImg")
 
     if (e.target.value == "noir") {
